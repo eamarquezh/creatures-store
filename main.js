@@ -24,12 +24,12 @@ aP.appendChild(ul);
 
 
 base('tareas').select({
-  maxRecords: 3,
+  maxRecords: 15,
   view: "Vista de cuadrícula"
 }).eachPage(function page(records, fetchNextPage) {
 
   records.forEach(function(record) {
-      
+    console.log(record.get('name'));
       const li = document.createElement('li');
       li.className='carta';
 
