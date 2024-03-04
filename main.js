@@ -17,6 +17,13 @@ const mLoad = document.createElement('div');
 mLoad.id='loader';
 loadCcontainer.appendChild(mLoad);
 
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("loader-container").style.display = "flex";
+  setTimeout(function () {
+      document.getElementById("loader-container").style.display = "none";
+  }, 2000);
+});
+
 
 const titulo = document.createElement('h1');
 aP.appendChild(titulo);
