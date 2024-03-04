@@ -8,6 +8,16 @@ var base = new Airtable({apiKey: API_KEY}).base('app8Xvp783RotQ9EO');
 const aP = document.getElementById('app');
 
 
+const loadCcontainer = document.createElement('div');
+loadCcontainer.id='loader-container';
+aP.appendChild(loadCcontainer);
+
+
+const mLoad = document.createElement('div');
+mLoad.id='loader';
+loadCcontainer.appendChild(mLoad);
+
+
 const titulo = document.createElement('h1');
 aP.appendChild(titulo);
 titulo.innerHTML='Creatures store';
